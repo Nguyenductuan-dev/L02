@@ -21,10 +21,7 @@ ul li {
     list-style: none;
 }
 .link {
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    margin: 10px;
+    
     padding: 10px;
     color: #fff;
     line-height: 0;
@@ -38,17 +35,116 @@ ul li:nth-child(even){
 }
 .item2 {
     display: inline-block;
-    padding: 20px;
 }
 
 
-.item2:nth-child(2n + 1){
+.item2:nth-of-type(odd){
     background-color: red;
 }
-.item2:nth-child(2n){
+.item2:nth-of-type(even){
     background-color: green;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    ul li:nth-child(odd){
+        width:50px;
+        background-color: violet;
+    }
+    ul li:nth-child(even){
+        width: 100px;
+        background-color: pink;
+    }
     
+    
+    .item2:nth-of-type(odd){
+        width: 50px;
+        background-color: violet;
+    }
+    .item2:nth-of-type(even){
+        width: 100px;
+        background-color: pink;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    ul li:nth-child(odd){
+        width:30px;
+        background-color: yellow;
+    }
+    ul li:nth-child(even){
+        width: 40px;
+        background-color: violet;
+    }
+    
+    
+    .item2:nth-of-type(odd){
+        width: 30px;
+        background-color: yellow;
+    }
+    .item2:nth-of-type(even){
+        width: 40px;
+        background-color: violet;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    ul li:nth-child(odd){
+        width:30px;
+        background-color: #150c46;
+    }
+    ul li:nth-child(even){
+        width: 40px;
+        background-color: yellow;
+    }
+    
+    
+    .item2:nth-of-type(odd){
+        width: 30px;
+        background-color: #150c46;
+    }
+    .item2:nth-of-type(even){
+        width: 40px;
+        background-color: yellow;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 425px) {
+    ul li:nth-child(odd){
+        width:20px;
+        background-color: yellow;
+    }
+    ul li:nth-child(even){
+        width: 50px;
+        background-color: red;
+    }
+    
+    
+    .item2:nth-of-type(odd){
+        width: 20px;
+        background-color: yellow;
+    }
+    .item2:nth-of-type(even){
+        width: 50px;
+        background-color: red;
+    }
+}
+@media only screen and (max-width: 320px){
+    ul li:nth-child(odd){
+        width:20px;
+        background-color: red;
+    }
+    ul li:nth-child(even){
+        width: 30px;
+        background-color: green;
+    }
+    
+    
+    .item2:nth-of-type(odd){
+        width: 20px;
+        background-color: red;
+    }
+    .item2:nth-of-type(even){
+        width: 30px;
+        background-color: green;
+    }
 }
